@@ -8,7 +8,9 @@ namespace WebApplication1
 
             // Add services to the container.
             builder.Services.AddRazorPages();
-
+            builder.Services.AddHostedService<Job1>();
+            builder.Services.AddHostedService<Job2>();
+            builder.Services.AddHostedService<Job3>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
